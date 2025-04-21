@@ -1,0 +1,201 @@
+/* Definindo o fundo preto para o body */
+body {
+    background-color: black;
+    background-image: url('./src/fundo.jpg');
+    background-size: contain; /* A imagem vai caber na tela inteira, sem ser cortada */
+    background-position: left calc(100% - 20px); /* A imagem será posicionada à esquerda e ficará 150px acima da parte inferior */
+    background-repeat: no-repeat; /* A imagem não vai se repetir */
+    min-height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+    padding-top: 80px; /* ou mais, dependendo do tamanho do header */
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/* Estilizando o header para ficar fixo no topo */
+header {
+    background-color: transparent; /* Deixa o fundo do header transparente */
+    position: fixed; /* Fixar o header */
+    top: 0;
+    left: 0;
+    width: 100%; /* O header ocupa toda a largura */
+    z-index: 10; /* Garante que o header fique acima do conteúdo */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao header para destacar */
+}
+
+/* Ajustes na navegação */
+nav {
+    position: absolute;
+    top: 40px;
+    right: 120px;
+}
+
+/* Estilo para o menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilo para os itens da navegação */
+nav ul li {
+    margin-left: 50px;
+}
+
+/* Estilo para os links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover nos links */
+nav ul li a:hover {
+    background-color: #D9B57B;
+    border-radius: 5px;
+}
+
+/* Título da banner */
+.banner h2 {
+    font-size: 3rem; /* Tamanho grande do título */
+    color: white; /* Cor do título */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte para o título */
+    text-align: center;
+    margin-top: 100px; /* Espaço entre o topo e o título */
+    margin-left: 120px;
+}
+
+/* Ajustes na seção do banner */
+.banner p {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 120px;
+}
+
+
+/* Estilo para o footer */
+footer {
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    position: absolute; /* Posiciona o footer no final da página */
+    bottom: 0; /* Fixa o footer na parte inferior */
+    left: 0;
+    width: 100%;
+    font-size: 14px; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+/* Estilo para o texto dentro do footer */
+footer p {
+    margin: 0; /* Remove a margem padrão */
+    font-family: 'Arial', sans-serif; /* Fonte mais limpa */
+}
+
+/* Efeito de hover no footer, se desejar adicionar */
+footer:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Transparência leve ao passar o mouse */
+}
+
+
+
+/* Área de Atuação */
+#AreaAtuacao {
+    padding: 30px 20px; /* Aumenta o padding para mover mais para a direita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0); /* Fundo totalmente transparente */
+    z-index: 10;
+    margin-top: 10px; /* Aumente para mover mais para baixo */
+    margin-left: 500px; /* Ajuste o valor para mover mais para a direita */
+}
+
+/* Ajeitar o conteúdo da seção */
+.texto-foto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Move os itens para a esquerda, mantendo o texto e a foto separados */
+    max-width: 1200px; /* Largura máxima para a seção */
+    width: 100%;
+    padding: 0 40px; /* Ajuste o afastamento */
+}
+
+/* Ajuste do texto */
+.texto {
+    flex: 1;
+    padding-right: 80px; /* Ajuste o afastamento à direita */
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff; /* Texto em branco */
+}
+
+/* Ajuste da foto */
+.foto {
+    flex: 1;
+    text-align: center;
+}
+
+.foto img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Estilos para os ícones sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: white; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Efeito de transição */
+}
+
+.social-icon:hover {
+    color: #D9B57B; /* Cor de hover para os ícones */
+}
+
+
+#Artigos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#Artigos h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 3fr;
+    gap: 20px;
+    justify-items: center;
+    flex-grow: 1;
+}
+
+.video-item video {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 4 / 3; /* formato quase quadrado */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

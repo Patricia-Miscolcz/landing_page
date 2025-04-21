@@ -1,0 +1,184 @@
+/* Estilizando a seção de Contato */
+
+/* Definindo o fundo preto para o body */
+body {
+    background-color: black;
+    color: white; /* Texto branco para garantir boa visibilidade */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a seção de Contato */
+.secao-contato {
+    background-color: #111; /* Fundo escuro */
+    color: white;
+    padding: 100px 20px 50px; /* Padding com mais espaço em cima devido à navegação fixa */
+    text-align: center;
+}
+
+.secao-contato h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px; /* Maior espaçamento entre o título e o texto */
+}
+
+.secao-contato p {
+    font-size: 1.5em;
+    margin: 20px 0; /* Aumentando o espaçamento entre os parágrafos */
+    color: #fff; /* Cor dourada */
+}
+
+.borda {
+    border: 1px solid white; /* Define a borda branca */
+    padding: 5px; /* Adiciona um espaço interno entre o conteúdo e a borda */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    margin: 10px auto; /* Centraliza a div e adiciona uma margem ao redor */
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.borda2 {
+    border: none; /* Remove a borda */
+    padding: 5px; /* Espaçamento interno entre o conteúdo e a borda */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    margin: 10px auto; /* Centraliza a div e adiciona uma margem ao redor */
+    width: 430px; /* Define a largura */
+    background-color: #25d366; /* Cor de fundo verde */
+    margin-bottom: 40px;
+}
+
+span{
+    color: #25d366;
+}
+
+/* Estilo para a foto da advogada */
+.foto-whatsapp {
+    position: relative; /* Permite o posicionamento absoluto do botão dentro da foto */
+    display: flex; /* Usando flexbox para alinhar foto e botão na mesma linha */
+    justify-content: center; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 15px; /* Espaçamento entre a foto e o botão */
+    margin-top: 30px; /* Distância adicional acima da foto */
+}
+
+/* Tamanho da imagem */
+.foto-imagem {
+    width: 280px; /* Tamanho maior da foto */
+    height: 373px; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Distância abaixo da foto */
+}
+
+/* Estilo para o botão do WhatsApp */
+.whatsapp-btn {
+    position: relative;
+    bottom: -160px; /* Ajuste a posição do botão para ficar no canto inferior */
+    right: 53px; /* Ajuste a posição do botão para ficar no canto inferior direito */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366; /* Cor verde do WhatsApp */
+    color: white;
+    padding: 12px; /* Aumentando o tamanho do botão */
+    border-radius: 50%; /* Tornando o botão completamente redondo */
+    width: 20px; /* Largura do botão ajustada */
+    height: 20px; /* Altura do botão ajustada */
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+}
+
+.whatsapp-btn i {
+    font-size: 1.7em; /* Ajusta o tamanho do ícone do WhatsApp */
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: transparent; /* Fundo transparente */
+    color: fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    position: absolute; /* Posiciona o footer no final da página */
+    bottom: 0; /* Fixa o footer na parte inferior */
+    left: 0;
+    width: 100%;
+    font-size: 14px; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+/* Estilo para o texto dentro do footer */
+footer p {
+    margin: 0; /* Remove a margem padrão */
+    font-family: 'Arial', sans-serif; /* Fonte mais limpa */
+}
+
+/* Efeito de hover no footer, se desejar adicionar */
+footer:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Transparência leve ao passar o mouse */
+}
+
+/* Estilos para os ícones sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: white; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Efeito de transição */
+}
+
+.social-icon:hover {
+    color: #D9B57B; /* Cor de hover para os ícones */
+}
+
+/* Estilizando o header para ficar fixo no topo */
+header {
+    background-color: transparent; /* Deixa o fundo do header transparente */
+    position: fixed; /* Fixar o header */
+    top: 0;
+    left: 0;
+    width: 100%; /* O header ocupa toda a largura */
+    z-index: 10; /* Garante que o header fique acima do conteúdo */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao header para destacar */
+}
+
+/* Ajustes na navegação */
+nav {
+    position: absolute;
+    top: 40px;
+    right: 120px;
+}
+
+/* Estilo para o menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilo para os itens da navegação */
+nav ul li {
+    margin-left: 50px;
+}
+
+/* Estilo para os links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover nos links */
+nav ul li a:hover {
+    background-color: #D9B57B;
+    border-radius: 5px;
+}
+
+
