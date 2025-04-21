@@ -1,0 +1,119 @@
+body {
+    background-color: black;
+    color: white; /* Texto branco para garantir boa visibilidade */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que a altura da página ocupe toda a tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+
+}
+
+/* Ajustes na navegação */
+nav {
+    position: absolute;
+    top: 40px;
+    right: 120px;
+}
+
+/* Estilo para o menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilo para os itens da navegação */
+nav ul li {
+    margin-left: 50px;
+}
+
+/* Estilo para os links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover nos links */
+nav ul li a:hover {
+    background-color: #D9B57B;
+    border-radius: 5px;
+}
+
+/* Ajustes no contêiner */
+.container {
+    width: 10%; /* Deixe a largura 100% para permitir que o conteúdo ocupe toda a largura da tela */
+    max-width: 1200px; /* Defina um limite máximo */
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #8b7bd9;
+}
+
+/*caixa grande que engloba as duas partes*/
+.secao-sobre {
+    width: 90%;  /* Largura da seção */
+    height: 80%;  /* Altura da seção */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 40px auto;  /* Centraliza a seção com margem automática */
+    justify-content: space-between;  /* Garante que as colunas fiquem separadas */
+    flex-wrap: wrap;  /* Permite que os itens quebrem para a próxima linha, se necessário */
+    margin-top: 80px;
+}
+
+.sobre-texto {
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 90%;
+    margin-right: 30px;
+}
+
+.sobre-imagem {
+    display: flex;
+    flex-direction: column;         /* Coloca a imagem em cima e o texto abaixo */
+    align-items: flex-start;        /* Alinha tudo à esquerda */
+    width: 35%;
+    height: 90%;                   /* Altura automática conforme o conteúdo */
+    margin-left: 30px;
+    padding: 10px;                  /* Espaçamento interno opcional */
+    box-sizing: border-box;         /* Garante que padding não ultrapasse a largura */
+}
+
+.sobre-imagem img {
+    width: 180px;            /* Tamanho da imagem */
+    height: 180px;
+    border-radius: 50%;      /* Torna a imagem redonda */
+    object-fit: cover;       /* Garante que a imagem preencha o círculo corretamente */
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.texto {
+    width: 100%;
+    margin-top: 10px;
+    text-align: justify;   /* Justifica o texto */
+    color: white;
+    line-height: 1.6;      /* Altere esse valor conforme desejar (1.4, 1.6, 2 etc.) */
+}
+
+.textoDir {
+    width: 90%;
+    text-align: justify;   /* Justifica o texto */
+    color: white;
+    line-height: 1.8;      /* Altere esse valor conforme desejar (1.4, 1.6, 2 etc.) */
+    padding: 20px;
+    font-size: large;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
