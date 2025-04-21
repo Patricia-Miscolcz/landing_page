@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
 /* Definindo o fundo preto para o body */
 body {
     background-color: black;
@@ -198,4 +205,47 @@ footer:hover {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/* TELAS PEQUENAS (até 768px) */
+@media (max-width: 768px) {
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .banner h2, .banner p {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    #AreaAtuacao {
+        margin-left: 0;
+        padding: 20px 10px;
+    }
+
+    .texto-foto {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .texto {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .foto img {
+        max-width: 80%;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr; /* Um vídeo por linha */
+    }
 }
